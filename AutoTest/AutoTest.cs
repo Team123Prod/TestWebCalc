@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.IO;
 
 namespace AutoTest
 {
@@ -18,7 +19,8 @@ namespace AutoTest
         public void Test_Calc_Enabled(string id, bool exp)
         {
             var driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("file:///D:/ORT/ORT_all/TeamCityCalcs/Calc_GET%20for%20HTTP.html");
+            string fullPath = Path.GetFullPath(@"../../../WebCalc/Calc.html");
+            driver.Navigate().GoToUrl("file:///" + fullPath);
 
             bool res = driver.FindElementById(id).Enabled;
             Assert.AreEqual(exp, res);
@@ -33,7 +35,8 @@ namespace AutoTest
         public void Test_Calc_Keys(string id, string key, string exp)
         {
             var driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("file:///D:/ORT/ORT_all/TeamCityCalcs/Calc_GET%20for%20HTTP.html");
+            string fullPath = Path.GetFullPath(@"../../../WebCalc/Calc.html");
+            driver.Navigate().GoToUrl("file:///" + fullPath);
 
             driver.FindElementById(id).SendKeys(key);
             string res = driver.FindElementById(id).GetAttribute("value");

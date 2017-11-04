@@ -5,6 +5,28 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTest", "AutoTest\AutoTest.csproj", "{AFC68446-8673-4AAD-837F-15C3A6F4512D}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebCalc", "WebCalc\", "{024453E2-CCF3-43BF-A52C-592E0EF78AE3}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56850"
+		Debug.AspNetCompiler.PhysicalPath = "WebCalc\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56850\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56850"
+		Release.AspNetCompiler.PhysicalPath = "WebCalc\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56850\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56850"
+		SlnRelativePath = "WebCalc\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +37,10 @@ Global
 		{AFC68446-8673-4AAD-837F-15C3A6F4512D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFC68446-8673-4AAD-837F-15C3A6F4512D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFC68446-8673-4AAD-837F-15C3A6F4512D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024453E2-CCF3-43BF-A52C-592E0EF78AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024453E2-CCF3-43BF-A52C-592E0EF78AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024453E2-CCF3-43BF-A52C-592E0EF78AE3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{024453E2-CCF3-43BF-A52C-592E0EF78AE3}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
